@@ -8,7 +8,7 @@
     "mocha": "mocha --require babel-core/register test/test.js",
     "test": "npm run lint && npm run build && npm run mocha",
     "build": "babel src --out-dir build",
-    "prepublish": "npm run build"
+    "prepare": "npm run build"
   },
   "keywords": [
     "react",
@@ -28,7 +28,6 @@
   },
   "homepage": "https://github.com/FormidableLabs/react-native-svg-mock#readme",
   "devDependencies": {
-    "babel": "^6.5.2",
     "babel-cli": "^6.11.4",
     "babel-core": "^6.13.2",
     "babel-eslint": "^6.1.2",
